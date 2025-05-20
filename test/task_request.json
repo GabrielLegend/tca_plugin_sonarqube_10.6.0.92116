@@ -1,0 +1,45 @@
+{
+    "task_name": "DemoTool",
+    "module_name": "codelint",
+    "task_params": {
+        "scan_languages": [
+            "python"
+        ],
+        "pre_cmd": null,
+        "build_cmd": null,
+        "envs": "SONAR_TIMEOUT=600 \n JAVA_OPTS=\"-Xms3m -Xmx6m\"",
+        "incr_scan": false,
+        "rules": [
+            "python:InequalityUsage"
+        ],
+        "rule_list": [
+            {
+                "name": "python:InequalityUsage",
+                "gid": 5727,
+                "pkg_id": 10882,
+                "pkg_name": "profile[10793]\u81ea\u5b9a\u4e49\u89c4\u5219\u5305",
+                "pkg_type": 1,
+                "pkgmap_id": 44354,
+                "tool_name": "tca_plugin_sonarqube",
+                "category": 7,
+                "display_name": "python:InequalityUsage",
+                "rule_title": "Source files should not have any duplicated blocks",
+                "severity": 3,
+                "custom": false,
+                "params": null
+            }
+        ],
+        "checktool": {
+            "display_name": "tca_plugin_sonarqube"
+        },
+        "path_filters": {
+            "inclusion": [],
+            "exclusion": [],
+            "re_inclusion": [],
+            "re_exclusion": [
+            ]
+        },
+        "scm_type": "git"
+    },
+    "task_dir": "test/"
+  }

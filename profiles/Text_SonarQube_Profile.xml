@@ -1,0 +1,1 @@
+<?xml version='1.0' encoding='UTF-8'?><profile><name>all</name><language>text</language><rules><rule><repositoryKey>text</repositoryKey><key>S6389</key><type>SECURITY_HOTSPOT</type><priority>MAJOR</priority><parameters/></rule></rules></profile>

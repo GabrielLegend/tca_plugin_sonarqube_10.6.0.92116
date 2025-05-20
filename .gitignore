@@ -1,0 +1,24 @@
+# python
+__pycache__
+*.py[co]
+*$py.class 
+.python-version
+
+# Idea
+.idea/
+.vscode/
+
+# Test data
+data/
+*.log
+
+# Mac OS
+.DS_Store
+._*
+
+# SVN
+.svn/
+
+# build
+build/
+dist/

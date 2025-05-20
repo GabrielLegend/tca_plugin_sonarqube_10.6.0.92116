@@ -1,0 +1,3521 @@
+[
+  {
+    "name": "tca_plugin_sonarqube_visualbasic_v10_6",
+    "display_name": "SonarQubeVB_v10_6",
+    "description": "VB static analyzer(need compile)",
+    "license": "LGPL-3.0",
+    "task_processes": [
+      "analyze",
+      "datahandle"
+    ],
+    "scan_app": "codelint",
+    "scm_url": "https://github.com/GabrielLegend/tca_plugin_sonarqube_10.6.0.92116.git",
+    "run_cmd": "python src/sq_visualbasic.py",
+    "envs": "python_version = 3",
+    "build_flag": true,
+    "checkrule_set": [
+      {
+        "real_name": "vbnet:S1110",
+        "display_name": "VbnetS1110",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Redundant pairs of parentheses should be removed",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1123",
+        "display_name": "VbnetS1123",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"Obsolete\" attributes should include explanations",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1125",
+        "display_name": "VbnetS1125",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Boolean literals should not be redundant",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1133",
+        "display_name": "VbnetS1133",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Deprecated code should be removed",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1134",
+        "display_name": "VbnetS1134",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Track uses of \"FIXME\" tags",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1135",
+        "display_name": "VbnetS1135",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Track uses of \"TODO\" tags",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1147",
+        "display_name": "VbnetS1147",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"End\" statements should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1479",
+        "display_name": "VbnetS1479",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"Select Case\" statements should not have too many \"Case\" clauses",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1821",
+        "display_name": "VbnetS1821",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"Select Case\" statements should not be nested",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1940",
+        "display_name": "VbnetS1940",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Boolean checks should not be inverted",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1944",
+        "display_name": "VbnetS1944",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Invalid casts should be avoided",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2222",
+        "display_name": "VbnetS2222",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Locks should be released on all paths",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2225",
+        "display_name": "VbnetS2225",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "\"ToString()\" method should not return Nothing",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2234",
+        "display_name": "VbnetS2234",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Arguments should be passed in the same order as the procedure parameters",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2340",
+        "display_name": "VbnetS2340",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"Do\" loops should not be used without a \"While\" or \"Until\" condition",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2342",
+        "display_name": "VbnetS2342",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Enumeration types should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2343",
+        "display_name": "VbnetS2343",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Enumeration values should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2344",
+        "display_name": "VbnetS2344",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Enumeration type names should not have \"Flags\" or \"Enum\" suffixes",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2345",
+        "display_name": "VbnetS2345",
+        "severity": "info",
+        "category": "correctness",
+        "rule_title": "Flags enumerations should explicitly initialize all their members",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2346",
+        "display_name": "VbnetS2346",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Flags enumerations zero-value members should be named \"None\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2347",
+        "display_name": "VbnetS2347",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Event handlers should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2348",
+        "display_name": "VbnetS2348",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Events should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2349",
+        "display_name": "VbnetS2349",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Event names should not have \"Before\" or \"After\" as a prefix or suffix",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2352",
+        "display_name": "VbnetS2352",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Indexed properties with more than one parameter should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2354",
+        "display_name": "VbnetS2354",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Line continuations should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2355",
+        "display_name": "VbnetS2355",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Array literals should be used instead of array creation expressions",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2357",
+        "display_name": "VbnetS2357",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Fields should be private",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2358",
+        "display_name": "VbnetS2358",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"IsNot\" should be used instead of \"Not ... Is ...\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2359",
+        "display_name": "VbnetS2359",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"On Error\" statements should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2583",
+        "display_name": "VbnetS2583",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Conditionally executed code should be reachable",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2589",
+        "display_name": "VbnetS2589",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Boolean expressions should not be gratuitous",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2692",
+        "display_name": "VbnetS2692",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"IndexOf\" checks should not be for positive numbers",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3329",
+        "display_name": "VbnetS3329",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Cipher Block Chaining IVs should be unpredictable",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3431",
+        "display_name": "VbnetS3431",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"[ExpectedException]\" should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3449",
+        "display_name": "VbnetS3449",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Right operands of shift operators should be integers",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3655",
+        "display_name": "VbnetS3655",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Empty nullable value should not be accessed",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3776",
+        "display_name": "VbnetS3776",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Cognitive Complexity of methods should not be too high",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3898",
+        "display_name": "VbnetS3898",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Value types should implement \"IEquatable<T>\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4060",
+        "display_name": "VbnetS4060",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Non-abstract attributes should be sealed",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4507",
+        "display_name": "VbnetS4507",
+        "severity": "info",
+        "category": "security",
+        "rule_title": "Delivering code in production with debug features activated is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5856",
+        "display_name": "VbnetS5856",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Regular expressions should be syntactically valid",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6145",
+        "display_name": "VbnetS6145",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"Option Strict\" should be enabled",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6146",
+        "display_name": "VbnetS6146",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"Option Explicit\" should be enabled",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6930",
+        "display_name": "VbnetS6930",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Backslash should be avoided in route templates",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6931",
+        "display_name": "VbnetS6931",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "ASP.NET controller actions should not have a route template starting with \"/\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1048",
+        "display_name": "VbnetS1048",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Finalize method should not throw exceptions",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1066",
+        "display_name": "VbnetS1066",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Mergeable \"if\" statements should be combined",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1067",
+        "display_name": "VbnetS1067",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Expressions should not be too complex",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1151",
+        "display_name": "VbnetS1151",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"Select...Case\" clauses should not have too many lines of code",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1155",
+        "display_name": "VbnetS1155",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Any()\" should be used to test for emptiness",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1163",
+        "display_name": "VbnetS1163",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Exceptions should not be thrown in finally blocks",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1172",
+        "display_name": "VbnetS1172",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Unused procedure parameters should be removed",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1186",
+        "display_name": "VbnetS1186",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Methods should not be empty",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S126",
+        "display_name": "VbnetS126",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"If ... ElseIf\" constructs should end with \"Else\" clauses",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S131",
+        "display_name": "VbnetS131",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"Select\" statements should end with a \"Case Else\" clause",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S134",
+        "display_name": "VbnetS134",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Control flow statements \"If\", \"For\", \"For Each\", \"Do\", \"While\", \"Select\" and \"Try\" should not be nested too deeply",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S138",
+        "display_name": "VbnetS138",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Procedures should not have too many lines of code",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S139",
+        "display_name": "VbnetS139",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Comments should not be located at the end of lines of code",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1481",
+        "display_name": "VbnetS1481",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Unused local variables should be removed",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1654",
+        "display_name": "VbnetS1654",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Method parameters should follow a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1862",
+        "display_name": "VbnetS1862",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Related \"If/ElseIf\" statements should not have the same condition",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2257",
+        "display_name": "VbnetS2257",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Using non-standard cryptographic algorithms is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2259",
+        "display_name": "VbnetS2259",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Null pointers should not be dereferenced",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2339",
+        "display_name": "VbnetS2339",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Public constant members should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2360",
+        "display_name": "VbnetS2360",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Optional parameters should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2362",
+        "display_name": "VbnetS2362",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Private constants should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2363",
+        "display_name": "VbnetS2363",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Private Shared ReadOnly\" fields should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2364",
+        "display_name": "VbnetS2364",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Private\" fields should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2365",
+        "display_name": "VbnetS2365",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Properties should not make collection or array copies",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2366",
+        "display_name": "VbnetS2366",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Properties should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2367",
+        "display_name": "VbnetS2367",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Non-private constants should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2368",
+        "display_name": "VbnetS2368",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Public methods should not have multidimensional array parameters",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2369",
+        "display_name": "VbnetS2369",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Non-private fields should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2370",
+        "display_name": "VbnetS2370",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Non-private \"Shared ReadOnly\" fields should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2372",
+        "display_name": "VbnetS2372",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Exceptions should not be thrown from property getters",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2374",
+        "display_name": "VbnetS2374",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Signed types should be preferred to unsigned ones",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2375",
+        "display_name": "VbnetS2375",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"With\" statements should be used for a series of calls to the same object",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2376",
+        "display_name": "VbnetS2376",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Write-only properties should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2387",
+        "display_name": "VbnetS2387",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Child class fields should not shadow parent class fields",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2925",
+        "display_name": "VbnetS2925",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"Thread.Sleep\" should not be used in tests",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2951",
+        "display_name": "VbnetS2951",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Exit Select\" statements should not be used redundantly",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3358",
+        "display_name": "VbnetS3358",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "If operators should not be nested",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3363",
+        "display_name": "VbnetS3363",
+        "severity": "info",
+        "category": "correctness",
+        "rule_title": "Date and time should not be used as a type for primary keys",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3453",
+        "display_name": "VbnetS3453",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Classes should not have only \"private\" constructors",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3464",
+        "display_name": "VbnetS3464",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Type inheritance should not be recursive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3466",
+        "display_name": "VbnetS3466",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Optional parameters should be passed to \"base\" calls",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3598",
+        "display_name": "VbnetS3598",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "One-way \"OperationContract\" methods should have \"void\" return type",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3900",
+        "display_name": "VbnetS3900",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Arguments of public methods should be validated against Nothing",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3903",
+        "display_name": "VbnetS3903",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Types should be defined in named namespaces",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3904",
+        "display_name": "VbnetS3904",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Assemblies should have version information",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3923",
+        "display_name": "VbnetS3923",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "All branches in a conditional structure should not have exactly the same implementation",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3926",
+        "display_name": "VbnetS3926",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Deserialization methods should be provided for \"OptionalField\" members",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3927",
+        "display_name": "VbnetS3927",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Serialization event handlers should be implemented correctly",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4201",
+        "display_name": "VbnetS4201",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Null checks should not be used with \"TypeOf Is\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4210",
+        "display_name": "VbnetS4210",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Windows Forms entry points should be marked with STAThread",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4423",
+        "display_name": "VbnetS4423",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Weak SSL/TLS protocols should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4428",
+        "display_name": "VbnetS4428",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "\"PartCreationPolicyAttribute\" should be used with \"ExportAttribute\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4545",
+        "display_name": "VbnetS4545",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"DebuggerDisplayAttribute\" strings should reference existing members",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4663",
+        "display_name": "VbnetS4663",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Comments should not be empty",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4790",
+        "display_name": "VbnetS4790",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Using weak hashing algorithms is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5042",
+        "display_name": "VbnetS5042",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Expanding archive files without controlling resource consumption is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5542",
+        "display_name": "VbnetS5542",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Encryption algorithms should be used with secure mode and padding scheme",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5547",
+        "display_name": "VbnetS5547",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Cipher algorithms should be robust",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5659",
+        "display_name": "VbnetS5659",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "JWT should be signed and verified with strong cipher algorithms",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5753",
+        "display_name": "VbnetS5753",
+        "severity": "warning",
+        "category": "security",
+        "rule_title": "Disabling ASP.NET \"Request Validation\" feature is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5773",
+        "display_name": "VbnetS5773",
+        "severity": "warning",
+        "category": "security",
+        "rule_title": "Types allowed to be deserialized should be restricted",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6513",
+        "display_name": "VbnetS6513",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"ExcludeFromCodeCoverage\" attributes should include a justification",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6602",
+        "display_name": "VbnetS6602",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Find\" method should be used instead of the \"FirstOrDefault\" extension",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6603",
+        "display_name": "VbnetS6603",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "The collection-specific \"TrueForAll\" method should be used instead of the \"All\" extension",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6605",
+        "display_name": "VbnetS6605",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Collection-specific \"Exists\" method should be used instead of the \"Any\" extension",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6607",
+        "display_name": "VbnetS6607",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "The collection should be filtered before sorting by using \"Where\" before \"OrderBy\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6608",
+        "display_name": "VbnetS6608",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Prefer indexing instead of \"Enumerable\" methods on types implementing \"IList\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6609",
+        "display_name": "VbnetS6609",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Min/Max\" properties of \"Set\" types should be used instead of the \"Enumerable\" extension methods",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6610",
+        "display_name": "VbnetS6610",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"StartsWith\" and \"EndsWith\" overloads that take a \"char\" should be used instead of the ones that take a \"string\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6612",
+        "display_name": "VbnetS6612",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "The lambda parameter should be used instead of capturing arguments in \"ConcurrentDictionary\" methods",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6613",
+        "display_name": "VbnetS6613",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"First\" and \"Last\" properties of \"LinkedList\" should be used instead of the \"First()\" and \"Last()\" extension methods",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6617",
+        "display_name": "VbnetS6617",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Contains\" should be used instead of \"Any\" for simple equality checks",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S927",
+        "display_name": "VbnetS927",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Parameter names should match base declaration",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S101",
+        "display_name": "VbnetS101",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Class names should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S103",
+        "display_name": "VbnetS103",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Lines should not be too long",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S104",
+        "display_name": "VbnetS104",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Files should not have too many lines of code",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S105",
+        "display_name": "VbnetS105",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Tabulation characters should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S107",
+        "display_name": "VbnetS107",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Procedures should not have too many parameters",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1075",
+        "display_name": "VbnetS1075",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "URIs should not be hardcoded",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S108",
+        "display_name": "VbnetS108",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Nested blocks of code should not be left empty",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S112",
+        "display_name": "VbnetS112",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "General or reserved exceptions should never be thrown",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S114",
+        "display_name": "VbnetS114",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Interface names should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S117",
+        "display_name": "VbnetS117",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Local variable names should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S119",
+        "display_name": "VbnetS119",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Generic type parameter names should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1192",
+        "display_name": "VbnetS1192",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "String literals should not be duplicated",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1197",
+        "display_name": "VbnetS1197",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Array designators \"()\" should be on the type, not the variable",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S122",
+        "display_name": "VbnetS122",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Statements should be on separate lines",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1226",
+        "display_name": "VbnetS1226",
+        "severity": "info",
+        "category": "correctness",
+        "rule_title": "Method parameters and caught exceptions should not be reassigned",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1301",
+        "display_name": "VbnetS1301",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"Select\" statements should have at least 3 \"Case\" clauses",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1313",
+        "display_name": "VbnetS1313",
+        "severity": "info",
+        "category": "security",
+        "rule_title": "Using hardcoded IP addresses is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1451",
+        "display_name": "VbnetS1451",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Track lack of copyright and license headers",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1541",
+        "display_name": "VbnetS1541",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Functions, procedures and properties should not be too complex",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1542",
+        "display_name": "VbnetS1542",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Functions and procedures should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1643",
+        "display_name": "VbnetS1643",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Strings should not be concatenated using \"+\" or \"&\" in a loop",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1645",
+        "display_name": "VbnetS1645",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "The \"&\" operator should be used to concatenate strings",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1656",
+        "display_name": "VbnetS1656",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Variables should not be self-assigned",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1659",
+        "display_name": "VbnetS1659",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Multiple variables should not be declared on the same line",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1751",
+        "display_name": "VbnetS1751",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Loops with at most one iteration should be refactored",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1764",
+        "display_name": "VbnetS1764",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Identical expressions should not be used on both sides of a binary operator",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S1871",
+        "display_name": "VbnetS1871",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Two branches in a conditional structure should not have exactly the same implementation",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2053",
+        "display_name": "VbnetS2053",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Password hashing functions should use an unpredictable salt",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2068",
+        "display_name": "VbnetS2068",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Hard-coded credentials are security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2077",
+        "display_name": "VbnetS2077",
+        "severity": "warning",
+        "category": "security",
+        "rule_title": "Formatting SQL queries is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2166",
+        "display_name": "VbnetS2166",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Classes named like \"Exception\" should extend \"Exception\" or a subclass",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2178",
+        "display_name": "VbnetS2178",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Short-circuit logic should be used in boolean contexts",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2302",
+        "display_name": "VbnetS2302",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"NameOf\" should be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2304",
+        "display_name": "VbnetS2304",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Namespace names should comply with a naming convention",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2429",
+        "display_name": "VbnetS2429",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Arrays should be initialized using the \"... = {}\" syntax",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2437",
+        "display_name": "VbnetS2437",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Unnecessary bit operations should not be performed",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2551",
+        "display_name": "VbnetS2551",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Shared resources should not be used for locking",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2612",
+        "display_name": "VbnetS2612",
+        "severity": "warning",
+        "category": "security",
+        "rule_title": "Setting loose POSIX file permissions is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2737",
+        "display_name": "VbnetS2737",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"catch\" clauses should do more than rethrow",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2757",
+        "display_name": "VbnetS2757",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Non-existent operators like \"=+\" should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2761",
+        "display_name": "VbnetS2761",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "'Not' boolean operator should not be repeated",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3011",
+        "display_name": "VbnetS3011",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Reflection should not be used to increase accessibility of classes, methods, or fields",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3385",
+        "display_name": "VbnetS3385",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"Exit\" statements should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3603",
+        "display_name": "VbnetS3603",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Methods with \"Pure\" attribute should return a value",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3871",
+        "display_name": "VbnetS3871",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Exception types should be \"Public\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3878",
+        "display_name": "VbnetS3878",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Arrays should not be created for ParamArray parameters",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3889",
+        "display_name": "VbnetS3889",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "\"Thread.Resume\" and \"Thread.Suspend\" should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3949",
+        "display_name": "VbnetS3949",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Calculations should not overflow",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3966",
+        "display_name": "VbnetS3966",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Objects should not be disposed more than once",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3990",
+        "display_name": "VbnetS3990",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Assemblies should be marked as CLS compliant",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3992",
+        "display_name": "VbnetS3992",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Assemblies should explicitly specify COM visibility",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3998",
+        "display_name": "VbnetS3998",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Threads should not lock on objects with weak identity",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4025",
+        "display_name": "VbnetS4025",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "Child class fields should not differ from parent class fields only by capitalization",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4136",
+        "display_name": "VbnetS4136",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Method overloads should be grouped together",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4144",
+        "display_name": "VbnetS4144",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Methods should not have identical implementations",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4225",
+        "display_name": "VbnetS4225",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Extension methods should not extend \"Object\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4581",
+        "display_name": "VbnetS4581",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"new Guid()\" should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4583",
+        "display_name": "VbnetS4583",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Calls to delegate's method \"BeginInvoke\" should be paired with calls to \"EndInvoke\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4586",
+        "display_name": "VbnetS4586",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Non-async \"Task/Task<T>\" methods should not return null",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5443",
+        "display_name": "VbnetS5443",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Using publicly writable directories is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5445",
+        "display_name": "VbnetS5445",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Insecure temporary file creation methods should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5693",
+        "display_name": "VbnetS5693",
+        "severity": "warning",
+        "category": "security",
+        "rule_title": "Allowing requests with excessive content length is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S5944",
+        "display_name": "VbnetS5944",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"Return\" statements should be used instead of assigning values to function names",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6354",
+        "display_name": "VbnetS6354",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Use a testable date/time provider",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6444",
+        "display_name": "VbnetS6444",
+        "severity": "warning",
+        "category": "security",
+        "rule_title": "Not specifying a timeout for regular expressions is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6561",
+        "display_name": "VbnetS6561",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Avoid using \"DateTime.Now\" for benchmarking or timing operations",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6563",
+        "display_name": "VbnetS6563",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Use UTC when recording DateTime instants",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6566",
+        "display_name": "VbnetS6566",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Use \"DateTimeOffset\" instead of \"DateTime\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6580",
+        "display_name": "VbnetS6580",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Use a format provider when parsing date and time",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6585",
+        "display_name": "VbnetS6585",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Don't hardcode the format when turning dates and times to strings",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6588",
+        "display_name": "VbnetS6588",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Use the \"UnixEpoch\" field instead of creating \"DateTime\" instances that point to the beginning of the Unix epoch",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S907",
+        "display_name": "VbnetS907",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"GoTo\" statements should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S2094",
+        "display_name": "VbnetS2094",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "Classes should not be empty",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3063",
+        "display_name": "VbnetS3063",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "\"StringBuilder\" data should be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3860",
+        "display_name": "VbnetS3860",
+        "severity": "info",
+        "category": "convention",
+        "rule_title": "\"ByVal\" should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3866",
+        "display_name": "VbnetS3866",
+        "severity": "error",
+        "category": "convention",
+        "rule_title": "\"IIf\" should not be used",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3869",
+        "display_name": "VbnetS3869",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "\"SafeHandle.DangerousGetHandle\" should not be called",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S3981",
+        "display_name": "VbnetS3981",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Collection sizes and array length comparisons should make sense",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4036",
+        "display_name": "VbnetS4036",
+        "severity": "info",
+        "category": "security",
+        "rule_title": "Searching OS commands in PATH is security-sensitive",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4143",
+        "display_name": "VbnetS4143",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "Map values should not be replaced unconditionally",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4158",
+        "display_name": "VbnetS4158",
+        "severity": "info",
+        "category": "correctness",
+        "rule_title": "Empty collections should not be accessed or iterated",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4159",
+        "display_name": "VbnetS4159",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Classes should implement their \"ExportAttribute\" interfaces",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4260",
+        "display_name": "VbnetS4260",
+        "severity": "warning",
+        "category": "correctness",
+        "rule_title": "\"ConstructorArgument\" parameters should exist in constructors",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4275",
+        "display_name": "VbnetS4275",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "Property procedures should access the expected fields",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4277",
+        "display_name": "VbnetS4277",
+        "severity": "error",
+        "category": "correctness",
+        "rule_title": "\"Shared\" parts should not be created with \"new\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S4830",
+        "display_name": "VbnetS4830",
+        "severity": "error",
+        "category": "security",
+        "rule_title": "Server certificates should be verified during SSL/TLS connections",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6562",
+        "display_name": "VbnetS6562",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Always set the \"DateTimeKind\" when creating new \"DateTime\" instances",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      },
+      {
+        "real_name": "vbnet:S6575",
+        "display_name": "VbnetS6575",
+        "severity": "warning",
+        "category": "convention",
+        "rule_title": "Use \"TimeZoneInfo.FindSystemTimeZoneById\" without converting the timezones with \"TimezoneConverter\"",
+        "rule_params": null,
+        "custom": false,
+        "languages": [
+          "visualbasic"
+        ],
+        "solution": null,
+        "owner": null,
+        "labels": [],
+        "description": "",
+        "disable": false
+      }
+    ]
+  }
+]
