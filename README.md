@@ -12,7 +12,7 @@ Note: Download the sonar-scanner version corresponding to the soanrqube version
 ## Usage
 ### Quick start
 1. setup TCA;
-2. download this project;
+2. download this project and tools.zip from release, unzip tools.zip and overwrite the tools directory;
 3. load the rules json in [config](config/) diretory for TCA Server;
 4. On the node management page on the TCA Server, configure the SonarQube tool process for the machine node;
 5. Create the corresponding TCA project on the TCA Server, add the SonarQube rules to the analysis plan, and start the analysis.
