@@ -146,16 +146,26 @@ class Process(object):
     def __init__(self, command, cwd=None, out=None, err=None, shell=False):
         # print(" ".join(command))
         if shell : command = " ".join(command)
-        self.p = p(command, cwd=cwd, stdout=pi, stderr=pi, shell=shell)
-        if out:
-            out_t = t(target=self.do, args=(self.p.stdout, out))
-            out_t.start()
-        if err:
-            err_t = t(target=self.do, args=(self.p.stderr, err))
-            err_t.start()
+        self.p = None
+        out_t = None
+        err_t = None
+        try:
+            self.p = p(command, cwd=cwd, stdout=pi, stderr=pi, shell=shell)
+            if out:
+                out_t = t(target=self.do, args=(self.p.stdout, out))
+                out_t.start()
+            if err:
+                err_t = t(target=self.do, args=(self.p.stderr, err))
+                err_t.start()
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            if self.p: self.p.close()
+            if out_t: out_t.close()
+            if err_t: err_t.close()
 
     def wait(self):
-        self.p.wait()
+        if self.p: self.p.wait()
 
     def do(self, pipe, callback=None):
         while self.p.poll() is None:

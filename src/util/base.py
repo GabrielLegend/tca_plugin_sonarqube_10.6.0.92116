@@ -602,7 +602,7 @@ class Sonar(SQBase):
         :param cmd_type:
         :return:
         """
-        # print("[warning] run cmd: %s" % " ".join(command))
+        print("[warning] run cmd: %s" % " ".join(command))
         print("[warning] Start cmd...")
         spc = Process(
             command,
@@ -611,7 +611,7 @@ class Sonar(SQBase):
             err=self.__stderr_handle,
         )
         spc.wait()
-        if spc.p.returncode != 0:
+        if spc.p == None or spc.p.returncode != 0:
             if cmd_type == "compile":
                 self._raise_error(msg="编译失败，请确认编译命令正确，并查看log排查失败原因。", err_type=cmd_type)
             # 调整为默认不报异常，只有指定类型才会报异常
